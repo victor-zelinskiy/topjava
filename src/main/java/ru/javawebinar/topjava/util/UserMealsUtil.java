@@ -26,7 +26,7 @@ public class UserMealsUtil {
 
     private static List<UserMealWithExceed> mealListWithExceed = getFilteredMealsWithExceeded(mealList, LocalTime.of(0, 0), LocalTime.of(23, 0), 2000);
 
-    public static List<UserMealWithExceed> getMealListWithExceed() {
+    public static List<UserMealWithExceed> getListWithExceed() {
         return mealListWithExceed;
     }
 
