@@ -5,7 +5,7 @@ import ru.javawebinar.topjava.LoggerWrapper;
 import ru.javawebinar.topjava.model.User;
 import ru.javawebinar.topjava.service.UserService;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
  * User: gkislin
@@ -16,7 +16,7 @@ public abstract class AbstractUserController {
     @Autowired
     private UserService service;
 
-    public List<User> getAll() {
+    public Collection<User> getAll() {
         LOG.info("getAll");
         return service.getAll();
     }
